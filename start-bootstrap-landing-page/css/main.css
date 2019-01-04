@@ -1,0 +1,53 @@
+body { 
+   overflow-x: hidden;
+}
+
+.features-icon i {
+	font-size: 4.5rem;
+}
+.features-icon i:hover {
+	transform: scale(1.1);
+}
+
+header {
+	background: url("https://blackrockdigital.github.io/startbootstrap-landing-page/img/bg-masthead.jpg") no-repeat center center;
+	height: 500px;
+	position: relative;
+	background-size: cover;	
+
+}
+@media(min-width: 768px)
+{
+	header {
+		padding-top: 12rem;
+		padding-bottom: 12rem;
+	}
+	header h1 {
+		font-size: 3rem;
+	}
+}
+
+#masthead {
+	padding-bottom: 350px;
+}
+
+.userimage {
+	max-width: 10rem;
+}
+
+.usertestimonial{
+	box-shadow: 0 5px 5px 0 #adb5bd;
+}
+
+#signup {
+	background: url("https://blackrockdigital.github.io/startbootstrap-landing-page/img/bg-masthead.jpg") no-repeat center center;
+	position: relative;
+	background-size: cover;	
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+}
+
+#footer {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
