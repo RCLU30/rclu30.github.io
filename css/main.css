@@ -1,54 +1,65 @@
-body{
-    background-color: #f5d9d5;
-    font-family: "Nunito", sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400');
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+
+
+#navLinks a {
+    font-family: Raleway, sans-serif;
+
 }
 
-.blurb h2 {
-    color: #ea1c2c;
-    font-weight: 100;
-    font-size: 2rem;
+#navLinks a:hover {
+    font-weight: 700;
 }
 
-.blurb p {
-    color: #f498b8;
-    font-weight: 100;
-    font-size: 1.25rem;
-    line-height: 2;
+
+#masthead {
+    /* TODO: CHANGE BACKGROUND IMAGE*/
+    background: #151515 url("https://aboualnaser.github.io/images/intro-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 250px;
+    padding-top: 200px;
 }
 
-#main-navbar{
-    font-size: 1.5rem;
-    font-weight: 100;
-}
-#main-navbar .navbar-brand{
-    color: #ea1c2c;
+.intro-lead{
+    font-family: Montserrat, sans-serif;
+    font-style: italic;
 }
 
-#main-navbar .nav-link {
-    color: white;
+.intro-heading {
+    font-size: 3.3rem;
 }
 
-#main-navbar .nav-link:hover {
-    color: #ea1c2c;
+.intro-subheading{
+    font-family: 'Source Code Pro', monospace;
+
 }
 
-#headingGroup span {
-    color: #ea1c2c;
+.profile-pic {
+    width: 230px;
+    display: block;
+    margin: 0 auto;
 }
 
-#headingGroup h1 {
-    font-weight: 100;   
-    font-size: 4rem;
+.profile-text {
+    display: flex;  
+    align-items: center;
+}
+.profile-text p {
+    /*align-items: center*/
 }
 
-@media (max-width: 1200px){
-    #headingGroup h1 {
-        font-weight: 100;   
-        font-size: 3rem;
-    } 
+img.skills {
+    align-items: center;
+    width: auto;
+    max-height: 250px;
 }
 
-.navbar.scrolled {
-    background: rgb(222, 192, 222);
-    transition: background 500ms;
+.compentencies .row .skill-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
