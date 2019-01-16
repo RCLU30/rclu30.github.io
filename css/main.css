@@ -2,40 +2,41 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 
-
-#navLinks a {
-    font-family: Raleway, sans-serif;
-
+#navBrand{
+    font-family: 'Montserrat', monospace;
+    font-style: italic;
+    font-weight: bold;
 }
 
-#navLinks a:hover {
+a.nav-link {
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+}
+
+a.nav-link:hover {
     font-weight: 700;
 }
 
 
 #masthead {
     /* TODO: CHANGE BACKGROUND IMAGE*/
-    background: #151515 url("https://aboualnaser.github.io/images/intro-bg.jpg");
+    background: #151515 url("../images/masthead-bg.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
     padding-bottom: 250px;
     padding-top: 200px;
-}
-
-.intro-lead{
-    font-family: Montserrat, sans-serif;
-    font-style: italic;
+    text-shadow: 4px 4px 2px rgba( 0,  0,  0, 1);
 }
 
 .intro-heading {
-    font-size: 3.3rem;
+    font-size: 4rem;
 }
 
 .intro-subheading{
     font-family: 'Source Code Pro', monospace;
-
+    font-size: 1.75rem;
 }
 
 .profile-pic {
@@ -44,7 +45,7 @@
     margin: 0 auto;
 }
 
-.profile-text {
+.profile-text p{
     display: flex;  
     align-items: center;
 }
@@ -55,7 +56,7 @@
 img.skills {
     align-items: center;
     width: auto;
-    max-height: 250px;
+    max-height: 150px;
 }
 
 .compentencies .row .skill-icon{
