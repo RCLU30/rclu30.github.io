@@ -17,9 +17,20 @@ a.nav-link:hover {
     font-weight: 700;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+}
+
 
 #masthead {
     /* TODO: CHANGE BACKGROUND IMAGE*/
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
     background: #151515 url("../images/masthead-bg.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -32,11 +43,24 @@ a.nav-link:hover {
 
 .intro-heading {
     font-size: 4rem;
+    opacity: 0;
+    margin-top: 100px;
+    animation: 1s slidefade 1s forwards;
 }
 
-.intro-subheading{
+.intro-subheading span{
     font-family: 'Source Code Pro', monospace;
     font-size: 1.75rem;
+    opacity: 0;
+    margin-top: 100px;
+    animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade {
+    100%{
+        opacity: 1;
+        margin: 0;
+    }
 }
 
 .profile-pic {
