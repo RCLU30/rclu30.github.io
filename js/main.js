@@ -39,7 +39,6 @@ $(document).ready(function() {
 
 	// percent animation does not start until scrolling down
   var skillTopOffset = $('.skillsSection').offset().top;
-  var statTopOffset = $('.statsSection').offset().top;
   var countUpFinish = false;
   $(window).scroll(function() {
 	// skills section
@@ -56,14 +55,7 @@ $(document).ready(function() {
 		  	}
 		  });
 	  }
-	  if(!countUpFinish && window.pageYOffset > statTopOffset - $(window).height()+200) {
-		   $(".counter").each(function() {
-		  	var elem = $(this);
-		  	var endVal = parseInt(elem.text());
-		  	elem.countup(endVal);
-		  });
-		   countUpFinish = true;
-	  }
+	  
   });
 
 	// smooth navigation on click
