@@ -1,147 +1,334 @@
----
-layout: default
-title: Ricky Lu's Github Page
----
-<!-- testing (comment out below before production) -->
+<!doctype html>
+<html class="no-js" lang="">
 <head>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<script type="text/javascript" src="js/main.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Ricky Lu</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/superslides.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	
+	<script
+	src="https://code.jquery.com/jquery-3.4.0.min.js"
+	integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+	crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script src="js/countUp.js"></script>
+	<script src="js/countUp-jquery.js"></script>
+	<script src="js/jquery.superslides.min.js"></script>
+	<script src="js/jquery.easypiechart.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/typed.min.js"></script>
+	<script src="js/main.js"></script>
+
+
 </head>
+<body>
+	<div id="slides">
+		<div class="overlay"></div>
+	  <div class="slides-container">
+	    <img src="images/slide1.jpg" alt="slide 1">
+	    <img src="images/slide2.jpg" alt="slide 2">
+	    <img src="images/slide3.jpg" alt="slide 3">
+	  </div>
+    <nav class="slides-navigation">
+		  <a href="#" class="next"></a>
+		  <a href="#" class="prev"></a>
+		</nav>
+	</div>
 
-<!-- testing (comment out above before production) -->
+	<nav id="navigation" class="navbar navbar-expand-lg">
+	  <a class="navbar-brand" href="#">Ricky Lu</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	  <span class="navbar-toggler-icon"><i style="color: white" class="fas fa-bars"></i></span>
+	  </button>
 
-<section id="masthead">
-	<div class="cover-overlay"></div>
-	<div class="container">
-		<div class="row text-white">
-			<div class="col-12 text-center">
-				<h1 class="intro-heading">My name is Ricky</h1>
-				<p class="intro-subheading"> 
-					<span class="d-flex flex-column d-xl-inline-flex">aspiring developer</span> 
-					<span class="d-none d-xl-inline-flex">|</span> 
-					<span class="d-flex flex-column d-xl-inline-flex">experienced engineer</span> 
-					<span class="d-none d-xl-inline-flex">|</span> 
-					<span class="d-flex flex-column d-xl-inline-flex">amateur maker</span> 
-				</p>
-			</div>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item">
+	        <a class="nav-link" href="#about">About</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#skills">Skills</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#projects">Projects</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#contact">Contact Me</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+
+	<div class="titleMessage">
+		<div class="heading">
+			<p class="main">RICKY LU</p>
+			<p class="sub typed"></p>
 		</div>
 	</div>
-</section>
 
-<section id="about">
-	<div class="container">
-		<div class="row py-5">
-			<div class="profile col-sm-5">
-				<img class="rounded-circle profile-pic" src="images/profile-pic.jpg">
-			</div>
-			<div class="col-sm-7 profile-text d-flex">
-				<p class="lead align-items-center">Hello there, my name is Ricky. I am a self-taught aspiring developer.
-					<br><br>
-					I have a background in electrical and computer engineering and worked with some amazing technology and hardware. But now I've decided I want to get into the world of software and web development and create something beautiful and amazing to use.
-					<br><br>
-					Feel free to reach out to me, check me out on LinkedIn and Github. I look forward to working with you and worked on building an amazing web product!</p>
+	<div id="about" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<img class="aboutImage" src="images/profile-pic.jpg" alt="">
 				</div>
-		</div>
-	</div>
-</section>
-
-<section id="skills" class="compentencies bg-dark">
-	<div class="container">
-		<div class="row pb-5">
-			<div class="col-12">
-				<div class="text-center py-5 text-white">
-					<h1>Skills & Tools</h1>
-					<h5>These are some of the skills and tools I use to make the Web a better place.</h5>
-				</div>
-			</div>
-			<div class="col-6 col-sm-4">
-				<div class="skill-icon">
-					<img src="images/html5.svg" alt="html5" class="py-3 skills">
-				</div>				
-			</div>		
-			<div class="col-6 col-sm-4">
-				<div class="skill-icon">
-					<img src="images/css3.svg" alt="css" class="py-3 skills">
-				</div>				
-			</div>		
-			<div class="col-6 col-sm-4">
-				<div class="skill-icon">
-					<img src="images/javascript.svg" alt="javascript" class="py-3 skills">
-				</div>				
-			</div>		
-			<div class="col-6 col-sm-4">
-				<div class="skill-icon">
-					<img src="images/react.svg" alt="react" class="py-3 skills">
-				</div>				
-			</div>	
-			<div class="col-6 col-sm-4">
-				<div class="skill-icon">
-					<img src="images/bootstrap.svg" alt="bootstrap" class="py-3 skills">
-				</div>				
-			</div>	
-			<div class="col-6 col-sm-4">
-				<div class="skill-icon">
-					<img src="images/nodejs.svg" alt="nodejs" class="py-3 skills">
-				</div>				
-			</div>		
-			<div class="col-6 col-sm-4">
-				<div class="skill-icon">
-					<img src="images/python.svg" alt="python" class="py-3 skills">
-				</div>				
-			</div>		
-			<div class="col-6 col-sm-4">
-				<div class="skill-icon">
-					<img src="images/photoshop.svg" alt="photoshop" class="py-3 skills">
-				</div>				
-			</div>	
-			<div class="col-6 col-sm-4">
-				<div class="skill-icon">
-					<img src="images/linux.svg" alt="linux" class="py-3 skills">
-				</div>				
-			</div>	
-		</div>
-	</div>
-</section>
-
-<section id="projects" class="portfolio py-5">
-	<div class="text-center py-3">
-		<h1>
-			Projects
-			<br>
-		</h1>	
-		<h5>
-			A couple of small web projects I've made.
-		</h5>
-	</div>
-
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-4 my-2">
-				<div class="d-flex align-items-center mx-auto projectFrame">
-					<a href="https://github.com/rickyklu/startup-bootstrap-landing"><img alt="bootstrap-startup" class="projectImage img-thumbnail" src="images/bootstrap-page.jpg"></a>
-				</div>
-			</div>
-			<div class="col-lg-4 my-2">
-				<div class="d-flex align-items-center mx-auto projectFrame">
-					<a href="https://github.com/rickyklu/country-flag-guess"><img alt="flag-guessing-game" class="projectImage img-thumbnail" src="images/flag-game.jpg"></a>
-				</div>
-			</div>
-			<div class="col-lg-4 my-2">
-				<div class="d-flex align-items-center mx-auto projectFrame">
-					<a href="https://github.com/rickyklu/memory-game"><img alt="memory game" class="projectImage img-thumbnail" src="images/memory-game.jpg"></a>
-				</div>
-			</div>
-			<div class="col-lg-4 my-2">
-				<div class="d-flex align-items-center mx-auto projectFrame">
-					<a href="https://github.com/rickyklu/museum-candy"><img alt="museum-candy" class="projectImage img-thumbnail" src="images/museum-thumbnail.jpg"></a>
-				</div>
-			</div>
-			<div class="col-lg-4 my-2">
-				<div class="d-flex align-items-center mx-auto projectFrame">
-					<a href="https://github.com/rickyklu/todolist"><img alt="todo-list" class="projectImage img-thumbnail" src="images/todolist.jpg"></a>
+				<div class="col-md-7">
+					<h2>About Me</h2>
+					<p>Welcome, my name is Ricky. I grew up in the Greater Boston area my whole life. I grew up tinkering with electronics and computers; taking things apart and putting them back together. This lead me to study Electrical and Computer Engineering. Now I'm looking to break into the field of software and web development.</p>
+					<p>Through my studies I've gotten the opportunity to see and work on some great technologies and I'm always on the lookout to work on amazing projects. Feel free to check out some of the projects I've done on my Github page to see what I can do for you.</p>
 				</div>
 			</div>
 		</div>
 	</div>
-</section>
+
+	<div id="skills" class="section skillsSection">
+		<div class="container">
+			<div class="row">
+				<div class="text-center col-md-12">
+					<h2>Technical Skills</h2>
+					<p>A representation of tools and skills I use and how confident I am with them</p>
+				</div>
+				<div class="owl-carousel owl-theme">
+
+		   		<div class="skill">
+		   			<span class="chart" data-percent='80'>
+		   				<span class="percent">80</span>
+		   				<canvas height="152" width="152"></canvas>
+		   			</span>
+		   			<h4>HTML</h4>
+		   			<p>Structuring websites</p>
+		   		</div>
+					
+					<div class="skill">
+		   			<span class="chart" data-percent='70'>
+		   				<span class="percent">70</span>
+		   				<canvas height="152" width="152"></canvas>
+		   			</span>
+		   			<h4>CSS</h4>
+		   			<p>Styling websites</p>
+		   		</div>
+
+					<div class="skill">
+		   			<span class="chart" data-percent='60'>
+		   				<span class="percent">60</span>
+		   				<canvas height="152" width="152"></canvas>
+		   			</span>
+		   			<h4>Python</h4>
+		   			<p>Scripting and data analysis</p>
+		   		</div>
+
+					<div class="skill">
+		   			<span class="chart" data-percent='80'>
+		   				<span class="percent">80</span>
+		   				<canvas height="152" width="152"></canvas>
+		   			</span>
+		   			<h4>Javascript</h4>
+		   			<p>Making websites do cool things</p>
+		   		</div>
+
+					<div class="skill">
+		   			<span class="chart" data-percent='70'>
+		   				<span class="percent">70</span>
+		   				<canvas height="152" width="152"></canvas>
+		   			</span>
+		   			<h4>React</h4>
+		   			<p>A component based web framework to organize and build websites</p>
+		   		</div>
+
+					<div class="skill">
+		   			<span class="chart" data-percent='60'>
+		   				<span class="percent">60</span>
+		   				<canvas height="152" width="152"></canvas>
+		   			</span>
+		   			<h4>Redux</h4>
+		   			<p>Manage the state of website components</p>
+		   		</div>
+
+					<div class="skill">
+		   			<span class="chart" data-percent='40'>
+		   				<span class="percent">40</span>
+		   				<canvas height="152" width="152"></canvas>
+		   			</span>
+		   			<h4>D3.js</h4>
+		   			<p>Turning data into cool graphs and charts</p>
+		   		</div>
+
+					<div class="skill">
+		   			<span class="chart" data-percent='90'>
+		   				<span class="percent">90</span>
+		   				<canvas height="152" width="152"></canvas>
+		   			</span>
+		   			<h4>Linux</h4>
+		   			<p>Linux operating systems</p>
+		   		</div>
+
+		   		
+					<div class="skill">
+		   			<span class="chart" data-percent='40'>
+		   				<span class="percent">40</span>
+		   				<canvas height="152" width="152"></canvas>
+		   			</span>
+		   			<h4>SQL</h4>
+		   			<p>Searching and comparing data relational databases</p>
+		   		</div>
+		   		
+					<div class="skill">
+		   			<span class="chart" data-percent='70'>
+		   				<span class="percent">70</span>
+		   				<canvas height="152" width="152"></canvas>
+		   			</span>
+		   			<h4>Electrical Engineering</h4>
+		   			<p>Building stuff and wiring anything involving electricity, computers, or electronics</p>
+		   		</div>
+
+					<div class="skill">
+		   			<span class="chart" data-percent='40'>
+		   				<span class="percent">30</span>
+		   				<canvas height="152" width="152"></canvas>
+		   			</span>
+		   			<h4>Ruby on Rails</h4>
+		   			<p>Building websites using Rails </p>
+		   		</div>
+
+					<div class="skill">
+		   			<span class="chart" data-percent='65'>
+		   				<span class="percent">65</span>
+		   				<canvas height="152" width="152"></canvas>
+		   			</span>
+		   			<h4>Node.js</h4>
+		   			<p>Building websites using Node.js</p>
+		   		</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="projects" class="section projectsSection">
+		<div class="container">
+			<div class="row">
+				<div class="text-center col-md-12">
+					<h2>Projects</h2>
+					<p>Some of the stuff I've built on the web</p>
+				</div>
+
+				<div class="itemsContainer">
+					<ul class="items">
+						<li class="col-xs-6 col-sm-4 col-md-4 col-lg-3 pb-1">
+							<div class='item'>
+								<img src="images/email-feedback.jpg">
+								<div class="icons">
+									<a class="openButton" data-fancybox data-caption="Email Feedback: a React-Redux mock SaaS (software as a service)" href="https://lit-hamlet-49204.herokuapp.com/" title="View image">
+										<i class="fa fa-search"></i>
+									</a>
+									<a class="projectLink" href="" target="_blank">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+								<div class="imageOverlay"></div>
+							</div>
+						</li>
+
+						<li class="col-xs-6 col-sm-4 col-md-4 col-lg-3 pb-1">
+							<div class='item'>
+								<img src="images/bootstrap-page.jpg">
+								<div class="icons">
+									<a class="openButton" data-fancybox data-caption="this is a website" href="images/bootstrap-page.jpg" title="View image">
+										<i class="fa fa-search"></i>
+									</a>
+									<a class="projectLink" href="" target="_blank">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+								<div class="imageOverlay"></div>
+							</div>
+						</li>
+
+						<li class="col-xs-6 col-sm-4 col-md-4 col-lg-3 pb-1">
+							<div class='item'>
+								<img src="images/bootstrap-page.jpg">
+								<div class="icons">
+									<a class="openButton" data-fancybox data-caption="this is a website" href="images/bootstrap-page.jpg" title="View image">
+										<i class="fa fa-search"></i>
+									</a>
+									<a class="projectLink" href="" target="_blank">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+								<div class="imageOverlay"></div>
+							</div>
+						</li>
+
+						<li class="col-xs-6 col-sm-4 col-md-4 col-lg-3 pb-1">
+							<div class='item'>
+								<img src="images/bootstrap-page.jpg">
+								<div class="icons">
+									<a class="openButton" data-fancybox data-caption="this is a website" href="images/bootstrap-page.jpg" title="View image">
+										<i class="fa fa-search"></i>
+									</a>
+									<a class="projectLink" href="" target="_blank">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+								<div class="imageOverlay"></div>
+							</div>
+						</li>
+
+						<li class="col-xs-6 col-sm-4 col-md-4 col-lg-3 pb-1">
+							<div class='item'>
+								<img src="images/bootstrap-page.jpg">
+								<div class="icons">
+									<a class="openButton" data-fancybox data-caption="this is a website" href="images/bootstrap-page.jpg" title="View image">
+										<i class="fa fa-search"></i>
+									</a>
+									<a class="projectLink" href="" target="_blank">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+								<div class="imageOverlay"></div>
+							</div>
+						</li>
+
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+ 
+	<div id="contact"  class="contactSection">
+		<div class="container py-4">
+			<div class='text-center'>
+				<h2>Contact Me</h2>
+				<p>Check me out at the following:</p>
+			</div>
+		  <div class="row py-1">
+		    <div class="col-sm-4 d-flex justify-content-center">
+		      <a href="https://www.linkedin.com/in/luricky/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+		    </div>
+		    <div class="col-sm-4 d-flex justify-content-center">
+		      <a href="https://github.com/rickyklu" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+		    </div>
+		    <div class="col-sm-4 d-flex justify-content-center">
+		      <a href="mailto:rickyklu@live.com" target="_blank"><i class="far fa-envelope fa-3x"></i></i></a>
+		    </div>
+		  </div>
+		  <div class="row d-flex justify-content-center mt-4">
+		    <p>&copy; Copyright Ricky Lu 2019</p>
+		  </div>
+		</div>
+	</div>
+	
+	
+</body>
+</html>

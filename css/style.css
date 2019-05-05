@@ -70,14 +70,13 @@ p.sub {
     max-width:  100%;
 }
 
-.skillsSection,
-.projectsSection {
-    background-color: orange;
+.skillsSection {
+    background-color: #343a40;
     color:  #fff;
 }
 
 .contactSection {
-    background-color: #343a40;
+    background-color: #000;
     color:  #fff;
 }
 
@@ -133,6 +132,9 @@ p.sub {
     border-bottom: 2px solid #444;
 }
 
+.chart .percent {
+    color:  #fff;
+}
 
 .squareInnerContainer:before {
     right: 0px;
@@ -157,7 +159,7 @@ p.sub {
 }
 
 
-squareIcon {
+.squareIcon {
     position:  absolute;
     left:  50%;
     width:  40%;
@@ -173,7 +175,7 @@ squareIcon {
 }
 
 #navigation {
-    background-color: orange;
+    background-color: #343a40;
     padding:  20px 10px;
     z-index: 5;
     width:  100%;
@@ -244,7 +246,7 @@ squareIcon {
 .items a {
     width: 40px;
     height: 40px;
-    background-color: orange;
+    background-color: #343a40;
     position: relative;
     display: inline-block;
 

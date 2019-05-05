@@ -37,7 +37,7 @@ $(document).ready(function() {
 	});
 	// skills carousel
 
-	// animation does not start until scrolling down
+	// percent animation does not start until scrolling down
   var skillTopOffset = $('.skillsSection').offset().top;
   var statTopOffset = $('.statsSection').offset().top;
   var countUpFinish = false;
